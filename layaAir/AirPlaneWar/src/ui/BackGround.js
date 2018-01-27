@@ -17,7 +17,7 @@ let BackGround = (function(_super){
     };
     //注册类 第一个是路径 第二是全名称 第三是父类
     Laya.class(BackGround,"BackGround",_super)
-    console.log( );
+
     let _proto = BackGround.prototype;
     _proto.onLoop = function(){
         this.y += 1;
