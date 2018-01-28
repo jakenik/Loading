@@ -56,7 +56,7 @@ let createAnimation = (function(_super){
         createAnimation.super(this);
         //缓存所有动画
         
-        // this.init(hash);
+        this.init(hash);
     };
     Laya.class(createAnimation,'createAnimation',_super);
     let _pooto = createAnimation.prototype;
@@ -71,6 +71,7 @@ let createAnimation = (function(_super){
             for (let y = 1 ; y <= num ; y ++ ){
                 obj.push(src + y + type);
             }
+
             Laya.Animation.createFrames(obj,i);
         }
         

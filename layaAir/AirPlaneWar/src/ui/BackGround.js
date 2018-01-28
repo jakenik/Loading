@@ -1,8 +1,8 @@
 let BackGround = (function(_super){
-    function BackGround(width,heigth){
+    function BackGround(width,height){
         BackGround.super(this);
         this.W = width;
-        this.H = heigth;
+        this.H = height;
         //创建游戏背景
         this.bg1 = new Laya.Sprite();
         //加载并且显示图片
